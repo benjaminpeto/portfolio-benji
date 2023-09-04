@@ -102,6 +102,17 @@ const config: Config = {
             opacity: "0",
           },
         },
+        changeColor: {
+          "0%": {
+            background: "linear-gradient(to right, var(--gradient-1-start), var(--gradient-1-end))",
+          },
+          "50%": {
+            background: "linear-gradient(to right, var(--gradient-2-start), var(--gradient-2-end))",
+          },
+          "100%": {
+            background: "linear-gradient(to right, var(--gradient-3-start), var(--gradient-3-end))",
+          },
+        },
       },
     },
   },
