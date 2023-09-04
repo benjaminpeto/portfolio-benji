@@ -11,7 +11,7 @@ import {
   NavbarMenuItem,
   NavbarMenuToggle,
 } from "@nextui-org/react";
-import { ThemeSwitcher } from "../ThemeSwitcher/ThemeSwitcher";
+import { ThemeSwitcher } from "../ThemeSwitcher";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +19,12 @@ export default function App() {
   const menuItems = ["About", "Skills", "Projects", "Contact Me"];
 
   return (
-    <Navbar isBordered isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
+    <Navbar
+      isBordered
+      isMenuOpen={isMenuOpen}
+      onMenuOpenChange={setIsMenuOpen}
+      className='backdrop-blur-sm dark:bg-black/40'
+    >
       <NavbarContent className='sm:hidden' justify='start'>
         <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
       </NavbarContent>
