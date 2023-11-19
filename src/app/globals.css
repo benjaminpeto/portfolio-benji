@@ -3,34 +3,280 @@
 @tailwind utilities;
 
 @layer utilities {
-  .animation-delay-2000 {
-    animation-delay: 2s;
-  }
-  .animation-delay-4000 {
-    animation-delay: 4s;
-  }
+    .animation-delay-2000 {
+        animation-delay: 2s;
+    }
+    .animation-delay-4000 {
+        animation-delay: 4s;
+    }
 }
 
+html {
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+/* HERO BUTTON ANIMATION */
 @keyframes changeColor {
-  16.67% {
-    background: linear-gradient(to right, #007cf0, #00dfd8);
-    box-shadow: 0px 0px 135px 5px #007cf0;
-  }
-  33.33% {
-    background: linear-gradient(to right, #7928ca, #ff0080);
-    box-shadow: 0px 0px 135px 5px #7928ca;
-  }
-  83.33% {
-    background: linear-gradient(to right, #ff4d4d, #f9cb28);
-    box-shadow: 0px 0px 135px 5px #ff4d4d;
-  }
-  100%,
-  0% {
-    background: linear-gradient(to right, #007cf0, #00dfd8);
-    box-shadow: 0px 0px 135px 5px #007cf0;
-  }
+    16.67% {
+        background: linear-gradient(to right, #007cf0, #00dfd8);
+        box-shadow: 0px 0px 135px 5px #007cf0;
+    }
+    33.33% {
+        background: linear-gradient(to right, #7928ca, #ff0080);
+        box-shadow: 0px 0px 135px 5px #7928ca;
+    }
+    83.33% {
+        background: linear-gradient(to right, #ff4d4d, #f9cb28);
+        box-shadow: 0px 0px 135px 5px #ff4d4d;
+    }
+    100%,
+    0% {
+        background: linear-gradient(to right, #007cf0, #00dfd8);
+        box-shadow: 0px 0px 135px 5px #007cf0;
+    }
 }
 
 .button {
-  animation: changeColor ease-in 8s infinite;
+    animation: changeColor ease-in 8s infinite;
+}
+
+/* HERO BUTTON ANIMATION */
+
+/* SLIDER ANIMATION */
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100px * 9));
+    }
+}
+
+.slider {
+    height: 80px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 600px;
+}
+
+.slider::before,
+.slider::after {
+    content: "";
+    height: 80px;
+    position: absolute;
+    width: 150px;
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slide-track {
+    animation: slide 40s linear infinite;
+    display: flex;
+    width: calc(100px * 18);
+}
+
+.slide-track:hover {
+    animation-play-state: paused;
+}
+
+.slide {
+    height: 80px;
+    width: 80px;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slide:hover {
+    transform: scale(1.5);
+}
+
+@media screen and (max-width: 640px) {
+    .slider {
+        width: 100%;
+    }
+
+    .slider::before,
+    .slider::after {
+        width: 50px;
+    }
+}
+
+/* SLIDER ANIMATION */
+
+/* SPHERE SHAPE ANIMATION */
+
+.blob1 {
+    border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    background: #7928ca;
+    background-image: linear-gradient(45deg, #ff0080 0%, #7928ca 100%);
+    box-shadow: 0 0 60px 20px #7928ca66;
+    z-index: -10;
+    animation: morph1 3s linear infinite alternate;
+}
+
+@keyframes morph1 {
+    0% {
+        border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+    }
+    100% {
+        border-radius: 40% 60%;
+        transform: scale(1.2);
+    }
+}
+
+.blob2 {
+    border-radius: 72% 25% 29% 59% / 62% 40% 51% 34%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 5%;
+    top: 15%;
+    background: #007cf0;
+    background-image: linear-gradient(45deg, rgb(0, 223, 216) 0%, rgb(0, 124, 240) 100%);
+    box-shadow: 0 0 60px 20px #007cf066;
+    z-index: -10;
+    animation: morph2 4s linear infinite alternate;
+}
+
+@keyframes morph2 {
+    0% {
+        border-radius: 72% 25% 29% 59% / 62% 40% 51% 34%;
+        transform: scale(0.8);
+    }
+    100% {
+        border-radius: 72% 25%;
+    }
+}
+
+.blob3 {
+    border-radius: 82% 68% 45% 100% / 98% 100% 44% 53%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 20%;
+    top: 40%;
+    background: #ff4d4d;
+    background-image: linear-gradient(45deg, rgb(249, 203, 40) 0%, rgb(255, 77, 77) 100%);
+    box-shadow: 0 0 60px 20px #ff4d4d66;
+    z-index: -10;
+    animation: morph3 2s linear infinite alternate;
+}
+
+@keyframes morph3 {
+    0% {
+        border-radius: 82% 68% 45% 100% / 98% 100% 44% 53%;
+        transform: scale(1.1);
+    }
+    100% {
+        border-radius: 82% 68%;
+    }
+}
+
+.blob4 {
+    border-radius: 82% 48% 45% 100% / 98% 100% 44% 73%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 12%;
+    top: 10%;
+    background: #ff4d4d;
+    background-image: linear-gradient(45deg, rgb(249, 203, 40) 0%, rgb(255, 77, 77) 100%);
+    box-shadow: 0 0 60px 20px #ff4d4d66;
+    z-index: -10;
+    animation: morph3 3s linear infinite alternate;
+}
+
+.blob5 {
+    border-radius: 72% 25% 39% 59% / 62% 50% 51% 34%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 15%;
+    bottom: 35%;
+    background: #007cf0;
+    background-image: linear-gradient(45deg, rgb(0, 223, 216) 0%, rgb(0, 124, 240) 100%);
+    box-shadow: 0 0 60px 20px #007cf066;
+    z-index: -10;
+    animation: morph2 2s linear infinite alternate;
+}
+
+/* SPHERE SHAPE ANIMATION */
+
+/* CUSTOM GLASS EFFECT */
+
+.glassing {
+    background: rgba(255, 255, 255, 0.082);
+    border-radius: 16px;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(5.3px);
+}
+
+/* CUSTOM GLASS EFFECT */
+
+.listItems {
+    position: relative;
+}
+
+.listItems:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    animation: clippath 2s ease-in infinite;
+}
+
+@keyframes clippath {
+    0%,
+    100% {
+        clip-path: inset(0 0 95% 0);
+    }
+    25% {
+        clip-path: inset(0 95% 0 0);
+    }
+    50% {
+        clip-path: inset(95% 0 0 0);
+    }
+    75% {
+        clip-path: inset(0 0 0 95%);
+    }
+}
+
+.listItems:hover:nth-child(1n)::after {
+    border: 1px solid #7928ca;
+}
+.listItems:hover:nth-child(odd)::after {
+    border: 1px solid #ff4d4d;
+}
+.listItems:hover:last-child::after {
+    border: 1px solid #007cf0;
+}
+.listItems:hover:nth-child(1n) {
+    box-shadow: 0 0 40px 7px rgba(121, 40, 202, 0.4) !important;
+}
+.listItems:hover:nth-child(odd) {
+    box-shadow: 0 0 40px 7px rgba(255, 77, 77, 0.4) !important;
+}
+.listItems:hover:last-child {
+    box-shadow: 0 0 40px 7px rgba(0, 124, 240, 0.4) !important;
 }

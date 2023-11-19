@@ -1,42 +1,48 @@
 {
-  "name": "portfolio-benji",
-  "version": "0.1.0",
-  "private": true,
-  "author": {
-    "name": "Benjamin Petö",
-    "email": "benjaminpeto23@gmail.com",
-    "url": "https://www.benjaminpeto.com"
-  },
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "type-check": "tsc --project tsconfig.json --pretty --noEmit"
-  },
-  "dependencies": {
-    "@nextui-org/react": "^2.1.10",
-    "@types/node": "20.5.9",
-    "@types/react": "18.2.21",
-    "@types/react-dom": "18.2.7",
-    "autoprefixer": "10.4.15",
-    "eslint": "8.48.0",
-    "eslint-config-next": "13.4.19",
-    "framer-motion": "^10.16.2",
-    "next": "13.4.19",
-    "next-themes": "^0.2.1",
-    "postcss": "8.4.29",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "tailwindcss": "3.3.3",
-    "typescript": "5.2.2"
-  },
-  "devDependencies": {
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.0",
-    "husky": "^8.0.3",
-    "lint-staged": "^14.0.1",
-    "prettier": "^3.0.3",
-    "prettier-plugin-tailwindcss": "^0.5.4"
-  }
+    "name": "portfolio-benji",
+    "version": "0.1.0",
+    "private": true,
+    "author": {
+        "name": "Benjamin Petö",
+        "email": "benjaminpeto23@gmail.com",
+        "url": "https://www.benjaminpeto.com"
+    },
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "type-check": "tsc --project tsconfig.json --pretty --noEmit",
+        "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
+    },
+    "dependencies": {
+        "@nextui-org/react": "^2.2.9",
+        "@types/node": "20.5.9",
+        "@types/nodemailer": "^6.4.14",
+        "@types/react": "18.2.21",
+        "@types/react-dom": "18.2.7",
+        "autoprefixer": "10.4.15",
+        "eslint": "8.48.0",
+        "eslint-config-next": "13.5.6",
+        "framer-motion": "^10.16.2",
+        "geist": "^1.0.0",
+        "next": "13.5.6",
+        "next-themes": "^0.2.1",
+        "nodemailer": "^6.9.7",
+        "postcss": "8.4.29",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "react-hook-form": "^7.48.2",
+        "tailwindcss": "^3.3.3",
+        "tailwindcss-animated": "^1.0.1",
+        "typescript": "5.2.2"
+    },
+    "devDependencies": {
+        "eslint-config-prettier": "^9.0.0",
+        "eslint-plugin-prettier": "^5.0.0",
+        "husky": "^8.0.3",
+        "lint-staged": "^14.0.1",
+        "prettier": "^3.0.3",
+        "prettier-plugin-tailwindcss": "^0.5.6"
+    }
 }
