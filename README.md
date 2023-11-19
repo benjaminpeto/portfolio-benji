@@ -1,6 +1,6 @@
 # Portolio with Next.js
 
-This is a simple portolio website built with [Next.js](https://nextjs.org/). Utilising [Tailwind](https://tailwindcss.com/), [NextUI](https://nextui.org/) and Framer Motion[Framer Motion](https://www.framer.com/motion/). Contact form is powered by [nodemailer](https://nodemailer.com/).
+This is a simple portolio website built with [Next.js](https://nextjs.org/). Utilising [Tailwind](https://tailwindcss.com/), [NextUI](https://nextui.org/) and [Framer Motion](https://www.framer.com/motion/). Contact form is powered by [nodemailer](https://nodemailer.com/).
 
 ## 🚀 Getting Started
 
