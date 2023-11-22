@@ -1,15 +1,29 @@
+import Image from "next/image";
+import ProfileImg from "../../public/assets/profile_image.png";
 import PrimaryButtonLink from "../Buttons/PrimaryLink";
 import Heading2 from "../Text/Heading2";
+import Paragraphs from "../Text/Paragraphs";
 
 export default function Bio() {
     return (
         <section className='flex justify-center align-middle flex-col items-center mx-2 lg:mx-12 xl:mx-36 sm:mt-32 mt-20 px-6 md:px-12 lg:px-24 xl:px-32 relative'>
             <Heading2 text='A little about me...' />
+            <Paragraphs
+                classNames='mt-4 w-2/3 md:!leading-loose mb-6 md:mb-14'
+                text='Venturing beyond frontend and embracing the full-stack frontier'
+            />
             <div className='blob2'></div>
             <div className='blob3'></div>
-            <div className='md:grid md:grid-cols-3 gap-12 mt-20'>
-                <p className='md:col-span-1 text-center'>AVATAR GOES HERE</p>
-                <div className='md:col-span-2 flex flex-col glassing text-base p-8 font-light border border-solid border-gray-900/10 dark:border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(255,255,255,0.2)] gap-4'>
+            <div className='md:grid sm:grid-cols-3 gap-12 justify-center items-center'>
+                <Image
+                    src={ProfileImg}
+                    width={500}
+                    height={500}
+                    alt='Profile image displayed as code text with gradient colors'
+                    className='rounded-full object-contain pb-10 md:pb-0 mx-auto md:mx-0'
+                    id='profile-image'
+                />
+                <div className='sm:col-span-2 flex flex-col glassing text-base p-8 font-light border border-solid border-gray-900/10 dark:border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(255,255,255,0.2)] gap-4'>
                     <p>
                         I&apos;m a self-taught developer passionate about crafting exceptional digital experiences. With
                         <strong className='font-bold'> 2+ years of professional and self-driven learning</strong>,
@@ -25,14 +39,17 @@ export default function Bio() {
                         <strong className='font-bold'>
                             Leading frontend development for an invoicing service at ASDA
                         </strong>
-                        , handling millions annually, with just a 2-member team. Collaborating closely with a PHP
+                        , handling 7-figures annually, with just a 2-member team. Collaborating closely with a PHP
                         Laravel backend using Inertia, I honed my architectural planning and rapid development skills
                         while fostering effective frontend-backend collaboration.
                     </p>
                 </div>
             </div>
 
-            <PrimaryButtonLink href='cv' download='benjamin_peto_frontenddev_cv.pdf'>
+            <PrimaryButtonLink
+                href='/assets/BenjaminPeto-CurriculumVitaeNoPhone.pdf'
+                download='benjamin_peto_frontenddev_cv.pdf'
+            >
                 <svg
                     className='h-6 w-6 mr-2'
                     fill='#fff'

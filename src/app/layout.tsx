@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "404 - Page not found",
-    description: "Welcome in my world! My name is Benji and this is my portfolio website.",
+    description: "The page you are looking for does not exist",
 };
 
 export default function NotFoundLayout({ children }: { children: React.ReactNode }) {

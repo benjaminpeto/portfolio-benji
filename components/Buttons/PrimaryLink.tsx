@@ -16,8 +16,8 @@ export default function PrimaryButtonLink({ children, href, ref, download }: But
             initial={{ opacity: 0, scale: 0.2, y: 200 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{
-                duration: 0.5,
-                delay: 2,
+                duration: 0.25,
+                delay: 1,
                 ease: [0, 0.71, 0.2, 1.01],
             }}
             href={href}

@@ -38,7 +38,8 @@ const listItems: ListItemProps[] = [
     },
     {
         title: "Detail-Oriented",
-        description: "I sweat the small stuff to deliver pixel-perfect websites and web applications.",
+        description:
+            "I sweat the small stuff to deliver pixel-perfect websites and web applications without code smells.",
         icon: (
             <svg
                 className='h-8 w-8 mx-auto mb-4 dark:fill-white fill-black'
@@ -98,8 +99,7 @@ export default function List() {
             <Heading2 text='Why choose me?' />
             <Paragraphs
                 classNames='mt-4 w-2/3 md:!leading-loose mb-14'
-                text='I believe that every line of code and pixel on the screen should serve a purpose, combining aesthetics
-                with functionality.'
+                text="I'm committed to crafting digital experiences that truly resonate. Taking ownership of my work, ever curious about what's on the horizon. Thriving in dynamic setups, I adapt fast, ready to bring your digital dreams to life."
             />
             <div className='flex flex-col flex-wrap xl:flex-nowrap md:flex-row align-middle justify-center items-center md:justify-around w-full gap-12'>
                 <div className='blob1'></div>
@@ -117,10 +117,10 @@ export default function List() {
                             className='listItems max-w-xs shrink-0 glassing p-8 border border-solid border-gray-900/10 dark:border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(255,255,255,0.2)] transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300'
                         >
                             {item.icon}
-                            <h3 className='text-center text-gray-600 dark:text-white font-extrabold text-xl mb-2'>
+                            <h3 className='text-center text-gray-900 dark:text-white font-extrabold text-xl mb-2'>
                                 {item.title}
                             </h3>
-                            <p className='text-center dark:text-gray-400 text-gray-800 leading-tight tracking font-light'>
+                            <p className='text-center dark:text-gray-300 text-gray-800 leading-tight tracking font-light'>
                                 {item.description}
                             </p>
                         </motion.div>

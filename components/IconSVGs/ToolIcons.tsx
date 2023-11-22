@@ -5,7 +5,13 @@ export default function Icons() {
     return (
         <>
             <Tooltip className='bg-[#E44D26]' placement='top' offset={-10} content='HTML5'>
-                <svg className='slide group cursor-pointer' viewBox='0 0 128 128' height='40px' width='40px'>
+                <svg
+                    className='slide group cursor-pointer'
+                    viewBox='0 0 128 128'
+                    height='40px'
+                    width='40px'
+                    aria-label='HTML5'
+                >
                     <path
                         className='group-hover:fill-[#E44D26] dark:fill-[#D1D5DB]'
                         fill='#6b7280'
@@ -15,7 +21,13 @@ export default function Icons() {
             </Tooltip>
 
             <Tooltip className='bg-[#1572B6] text-white' placement='top' offset={-5} content='CSS3'>
-                <svg className='slide group cursor-pointer' viewBox='0 0 128 128' height='40px' width='40px'>
+                <svg
+                    className='slide group cursor-pointer'
+                    viewBox='0 0 128 128'
+                    height='40px'
+                    width='40px'
+                    aria-label='CSS3'
+                >
                     <path
                         className='group-hover:fill-[#1572B6] dark:fill-[#D1D5DB]'
                         fill='#6b7280'
@@ -25,7 +37,13 @@ export default function Icons() {
             </Tooltip>
 
             <Tooltip className='bg-[#F0DB4F] dark:text-black' placement='top' offset={-5} content='JavaScript'>
-                <svg className='slide group cursor-pointer' viewBox='0 0 128 128' height='40px' width='40px'>
+                <svg
+                    className='slide group cursor-pointer'
+                    viewBox='0 0 128 128'
+                    height='40px'
+                    width='40px'
+                    aria-label='Javascript'
+                >
                     <path
                         className='group-hover:fill-[#F0DB4F] dark:fill-[#D1D5DB]'
                         fill='#6b7280'
@@ -35,7 +53,13 @@ export default function Icons() {
             </Tooltip>
 
             <Tooltip className='bg-[#007acc] text-white' placement='top' offset={-5} content='TypeScript'>
-                <svg className='slide group cursor-pointer' viewBox='0 0 128 128' height='40px' width='40px'>
+                <svg
+                    className='slide group cursor-pointer'
+                    viewBox='0 0 128 128'
+                    height='40px'
+                    width='40px'
+                    aria-label='Typescript'
+                >
                     <path
                         className='group-hover:fill-[#007acc] dark:fill-[#D1D5DB]'
                         fill='#6b7280'
@@ -45,7 +69,13 @@ export default function Icons() {
             </Tooltip>
 
             <Tooltip className='bg-[#38b2ac]' placement='top' offset={-5} content='TailwindCSS'>
-                <svg className='slide group cursor-pointer' viewBox='0 0 128 128' height='40px' width='40px'>
+                <svg
+                    className='slide group cursor-pointer'
+                    viewBox='0 0 128 128'
+                    height='40px'
+                    width='40px'
+                    aria-label='TailwindCSS'
+                >
                     <path
                         className='group-hover:fill-[#38b2ac] dark:fill-[#D1D5DB]'
                         d='M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0'
@@ -55,7 +85,13 @@ export default function Icons() {
             </Tooltip>
 
             <Tooltip className='bg-[#7952b3] text-white' placement='top' offset={-5} content='Bootstrap'>
-                <svg className='slide group cursor-pointer' viewBox='0 0 128 128' height='40px' width='40px'>
+                <svg
+                    className='slide group cursor-pointer'
+                    viewBox='0 0 128 128'
+                    height='40px'
+                    width='40px'
+                    aria-label='Bootstrap'
+                >
                     <path
                         className='group-hover:fill-[#7952b3] dark:fill-[#D1D5DB]'
                         d='M27.235 2.051c-7.177 0-12.486 6.284-12.249 13.099.228 6.546-.068 15.026-2.203 21.94-2.14 6.936-5.76 11.319-11.673 11.883v6.387c5.913.563 9.533 4.947 11.673 11.883 2.135 6.914 2.43 15.394 2.203 21.94-.238 6.815 5.072 13.098 12.249 13.098h73.54c7.177 0 12.486-6.284 12.249-13.098-.228-6.546.068-15.026 2.202-21.94 2.14-6.935 5.751-11.319 11.664-11.883v-6.387c-5.913-.563-9.523-4.947-11.664-11.883-2.134-6.914-2.43-15.394-2.202-21.94.237-6.815-5.072-13.099-12.25-13.099zm58.114 61.686c0 9.384-7.002 15.073-18.621 15.073H45.306a.491.491 0 01-.491-.491V25.993a.491.491 0 01.491-.492h21.309c9.689 0 16.047 5.246 16.047 13.3 0 5.653-4.277 10.713-9.727 11.6v.296c7.418.813 12.414 5.948 12.414 13.04zM64.571 32.262H53.293v15.922h9.5c7.342 0 11.391-2.955 11.391-8.238 0-4.95-3.481-7.684-9.613-7.684zm-11.278 22.24V72.05h11.695c7.645 0 11.695-3.066 11.695-8.83 0-5.763-4.163-8.718-12.187-8.718z'
@@ -71,7 +107,13 @@ export default function Icons() {
             </Tooltip>
 
             <Tooltip className='bg-[#CB6699]' placement='top' offset={-5} content='SASS'>
-                <svg className='slide group cursor-pointer' viewBox='0 0 128 128' height='40px' width='40px'>
+                <svg
+                    className='slide group cursor-pointer'
+                    viewBox='0 0 128 128'
+                    height='40px'
+                    width='40px'
+                    aria-label='SASS'
+                >
                     <path
                         className='group-hover:fill-[#CB6699] dark:fill-[#D1D5DB]'
                         fillRule='evenodd'
@@ -83,7 +125,13 @@ export default function Icons() {
             </Tooltip>
 
             <Tooltip className='bg-[#61DAFB] dark:text-black' placement='top' offset={-5} content='React'>
-                <svg className='slide group cursor-pointer' viewBox='0 0 128 128' height='40px' width='40px'>
+                <svg
+                    className='slide group cursor-pointer'
+                    viewBox='0 0 128 128'
+                    height='40px'
+                    width='40px'
+                    aria-label='React'
+                >
                     <g className='group-hover:fill-[#61DAFB] dark:fill-[#D1D5DB]' fill='#6b7280'>
                         <circle cx='64' cy='47.5' r='9.3'></circle>
                         <path
@@ -95,7 +143,13 @@ export default function Icons() {
             </Tooltip>
 
             <Tooltip className='bg-black text-white' placement='top' offset={-5} content='NextJS'>
-                <svg className='slide group cursor-pointer' viewBox='0 0 128 128' height='40px' width='40px'>
+                <svg
+                    className='slide group cursor-pointer'
+                    viewBox='0 0 128 128'
+                    height='40px'
+                    width='40px'
+                    aria-label='NextJS'
+                >
                     <path
                         className='group-hover:fill-black dark:group-hover:fill-white'
                         fill='#6b7280'
@@ -105,7 +159,13 @@ export default function Icons() {
             </Tooltip>
 
             <Tooltip className='bg-[#83CD29] dark:text-black' placement='top' offset={-5} content='NodeJS'>
-                <svg className='slide group cursor-pointer' viewBox='0 0 128 128' height='40px' width='40px'>
+                <svg
+                    className='slide group cursor-pointer'
+                    viewBox='0 0 128 128'
+                    height='40px'
+                    width='40px'
+                    aria-label='NodeJS'
+                >
                     <path
                         className='group-hover:fill-[#83CD29] dark:fill-[#D1D5DB]'
                         fill='#6b7280'
@@ -115,7 +175,13 @@ export default function Icons() {
             </Tooltip>
 
             <Tooltip className='bg-black text-white' placement='top' offset={-5} content='Express'>
-                <svg className='slide group cursor-pointer' viewBox='0 0 128 128' height='40px' width='40px'>
+                <svg
+                    className='slide group cursor-pointer'
+                    viewBox='0 0 128 128'
+                    height='40px'
+                    width='40px'
+                    aria-label='Express'
+                >
                     <path
                         className='group-hover:fill-black  dark:group-hover:fill-white'
                         fill='#6b7280'
@@ -125,7 +191,13 @@ export default function Icons() {
             </Tooltip>
 
             <Tooltip className='bg-[#cb3837] text-white' placement='top' offset={-5} content='npm'>
-                <svg className='slide group cursor-pointer' viewBox='0 0 128 128' height='40px' width='40px'>
+                <svg
+                    className='slide group cursor-pointer'
+                    viewBox='0 0 128 128'
+                    height='40px'
+                    width='40px'
+                    aria-label='npm'
+                >
                     <path
                         className='group-hover:fill-[#cb3837] dark:fill-[#D1D5DB]'
                         fill='#6b7280'
@@ -135,7 +207,13 @@ export default function Icons() {
             </Tooltip>
 
             <Tooltip className='bg-[#2c8ebb] text-white' placement='top' offset={-5} content='yarn'>
-                <svg className='slide group cursor-pointer' viewBox='0 0 128 128' height='40px' width='40px'>
+                <svg
+                    className='slide group cursor-pointer'
+                    viewBox='0 0 128 128'
+                    height='40px'
+                    width='40px'
+                    aria-label='yarn'
+                >
                     <g fill='#6b7280'>
                         <path
                             className='group-hover:fill-[#2c8ebb] dark:fill-[#D1D5DB]'
@@ -150,7 +228,13 @@ export default function Icons() {
             </Tooltip>
 
             <Tooltip className='bg-[#F34F29] text-white' placement='top' offset={-5} content='git'>
-                <svg className='slide group cursor-pointer' viewBox='0 0 128 128' height='40px' width='40px'>
+                <svg
+                    className='slide group cursor-pointer'
+                    viewBox='0 0 128 128'
+                    height='40px'
+                    width='40px'
+                    aria-label='git'
+                >
                     <path
                         className='group-hover:fill-[#F34F29] dark:fill-[#D1D5DB]'
                         fill='#6b7280'
@@ -160,7 +244,13 @@ export default function Icons() {
             </Tooltip>
 
             <Tooltip className='bg-[#764abc] text-white' placement='top' offset={-5} content='Redux'>
-                <svg className='slide group cursor-pointer' viewBox='0 0 128 128' height='40px' width='40px'>
+                <svg
+                    className='slide group cursor-pointer'
+                    viewBox='0 0 128 128'
+                    height='40px'
+                    width='40px'
+                    aria-label='Redux'
+                >
                     <path fill='none' d='M0 0h128v128H0z'></path>
                     <path
                         className='group-hover:fill-[#764abc] dark:fill-[#D1D5DB]'
@@ -171,7 +261,13 @@ export default function Icons() {
             </Tooltip>
 
             <Tooltip className='bg-[#FF4785]' placement='top' offset={-5} content='Storybook'>
-                <svg className='slide group cursor-pointer' viewBox='0 0 128 128' height='40px' width='40px'>
+                <svg
+                    className='slide group cursor-pointer'
+                    viewBox='0 0 128 128'
+                    height='40px'
+                    width='40px'
+                    aria-label='Storybook'
+                >
                     <path
                         className='group-hover:fill-[#FF4785] dark:fill-[#D1D5DB]'
                         d='M107.346 2.012l-6.914.431.539 14.377c.028.795-.889 1.259-1.514.766l-4.63-3.65-5.485 4.162a.934.934 0 01-1.498-.784l.617-14.123L19.873 7.48a6.264 6.264 0 00-5.87 6.488l3.86 102.838a6.264 6.264 0 005.98 6.023l83.612 3.754a6.273 6.273 0 004.609-1.73 6.255 6.255 0 001.936-4.526V8.264a6.258 6.258 0 00-1.975-4.566 6.257 6.257 0 00-4.679-1.686zm-41.46 21.187c16.308 0 25.214 8.723 25.214 25.319-2.204 1.713-18.62 2.88-18.62.443.346-9.3-3.817-9.707-6.13-9.707-2.198 0-5.899.662-5.899 5.644 0 12.288 31.69 11.625 31.69 36.424 0 13.95-11.335 21.655-25.791 21.655-14.92 0-27.957-6.036-26.485-26.963.578-2.457 19.545-1.873 19.545 0-.23 8.635 1.735 11.175 6.707 11.175 3.817 0 5.553-2.103 5.553-5.646 0-12.621-31.227-13.063-31.227-36.201 0-13.285 9.138-22.143 25.444-22.143z'
@@ -181,7 +277,13 @@ export default function Icons() {
             </Tooltip>
 
             <Tooltip className='bg-[#336791] text-white' placement='top' offset={-5} content='PostgreSQL'>
-                <svg className='slide group cursor-pointer' viewBox='0 0 128 128' height='40px' width='40px'>
+                <svg
+                    className='slide group cursor-pointer'
+                    viewBox='0 0 128 128'
+                    height='40px'
+                    width='40px'
+                    aria-label='PostgreSQL'
+                >
                     <path
                         className='group-hover:fill-[#336791] dark:fill-[#D1D5DB]'
                         fillRule='evenodd'
@@ -193,7 +295,13 @@ export default function Icons() {
             </Tooltip>
 
             <Tooltip className='bg-[#99425B] text-white' placement='top' offset={-5} content='Jest'>
-                <svg className='slide group cursor-pointer' viewBox='0 0 128 128' height='40px' width='40px'>
+                <svg
+                    className='slide group cursor-pointer'
+                    viewBox='0 0 128 128'
+                    height='40px'
+                    width='40px'
+                    aria-label='Jest'
+                >
                     <path
                         className='group-hover:fill-[#99425B] dark:fill-[#D1D5DB]'
                         fill='#6b7280'

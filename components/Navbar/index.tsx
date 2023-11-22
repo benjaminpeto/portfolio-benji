@@ -28,7 +28,7 @@ export default function App() {
             isBordered
             isMenuOpen={isMenuOpen}
             onMenuOpenChange={setIsMenuOpen}
-            className='backdrop-blur-sm dark:bg-black/40 animate-fade-down animate-duration-500 animate-delay-[2500ms] animate-ease-linear'
+            className='backdrop-blur-sm dark:bg-black/40 animate-fade-down animate-duration-[250ms] animate-delay-[1000ms] animate-ease-linear'
         >
             <NavbarContent className='sm:hidden' justify='start'>
                 <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />

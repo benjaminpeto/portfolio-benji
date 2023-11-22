@@ -1,7 +1,13 @@
 export default function Socials() {
     return (
         <div className='flex gap-4'>
-            <a className='group' href='https://www.linkedin.com/in/benjaminpeto/' target='_blank' rel='noreferrer'>
+            <a
+                className='group'
+                href='https://www.linkedin.com/in/benjaminpeto/'
+                target='_blank'
+                rel='noreferrer'
+                aria-label='Linkedin'
+            >
                 <svg
                     height='30px'
                     width='30px'
@@ -16,7 +22,13 @@ export default function Socials() {
                     />
                 </svg>
             </a>
-            <a className='group' href='https://github.com/benjaminpeto' target='_blank' rel='noreferrer'>
+            <a
+                className='group'
+                href='https://github.com/benjaminpeto'
+                target='_blank'
+                rel='noreferrer'
+                aria-label='Github'
+            >
                 <svg height='30px' width='30px' id='Layer_1' version='1.1' viewBox='0 0 512 512'>
                     <g>
                         <path

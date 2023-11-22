@@ -10,7 +10,7 @@ export default function Hero() {
                     initial={{ opacity: 0, scale: 0.2 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{
-                        duration: 0.5,
+                        duration: 0.25,
                         ease: [0, 0.71, 0.2, 1.01],
                     }}
                     data-content='Coffee.'
@@ -24,8 +24,8 @@ export default function Hero() {
                     initial={{ opacity: 0, scale: 0.2 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{
-                        duration: 0.5,
-                        delay: 0.5,
+                        duration: 0.25,
+                        delay: 0.25,
                         ease: [0, 0.71, 0.2, 1.01],
                     }}
                     data-content='Code.'
@@ -39,8 +39,8 @@ export default function Hero() {
                     initial={{ opacity: 0, scale: 0.2 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{
-                        duration: 0.5,
-                        delay: 1,
+                        duration: 0.25,
+                        delay: 0.5,
                         ease: [0, 0.71, 0.2, 1.01],
                     }}
                     data-content='Repeat.'
@@ -55,8 +55,8 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 100, scale: 0 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{
-                    duration: 0.5,
-                    delay: 1.5,
+                    duration: 0.25,
+                    delay: 0.75,
                     ease: [0, 0.71, 0.2, 1.01],
                 }}
                 className='max-w-3xl inline-block dark:text-gray-400 text-gray-700 tracking-tight sm:leading-10 sm:text-xl text-md font-light text-center mx-4 sm:mx-0 px-6'

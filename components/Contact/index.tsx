@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
             <Heading2 text="Let's have a coffee!" />
             <Paragraphs
                 classNames='mt-4 w-2/3 md:!leading-loose mb-14'
-                text="Lost in code like a missing semicolon? Let's chat! I'll respond faster than new JS framework could see the light..."
+                text="Lost in code like a missing semicolon? Let's chat! I'll respond faster than a new JS framework could see the light..."
             />
             {isShowModal && (
                 <CustomModal

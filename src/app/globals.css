@@ -171,7 +171,7 @@ html {
     width: 150px;
     height: 150px;
     position: absolute;
-    left: 20%;
+    left: 35%;
     top: 40%;
     background: #ff4d4d;
     background-image: linear-gradient(45deg, rgb(249, 203, 40) 0%, rgb(255, 77, 77) 100%);
@@ -195,7 +195,7 @@ html {
     width: 150px;
     height: 150px;
     position: absolute;
-    left: 12%;
+    left: 10%;
     top: 10%;
     background: #ff4d4d;
     background-image: linear-gradient(45deg, rgb(249, 203, 40) 0%, rgb(255, 77, 77) 100%);
@@ -279,4 +279,20 @@ html {
 }
 .listItems:hover:last-child {
     box-shadow: 0 0 40px 7px rgba(0, 124, 240, 0.4) !important;
+}
+
+@media screen and (max-width: 768px) {
+    #profile-image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .blob2 {
+        right: 0%;
+        top: 65%;
+    }
+
+    .blob4 {
+        top: 60%;
+    }
 }
