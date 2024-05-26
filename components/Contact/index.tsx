@@ -10,7 +10,7 @@ import Paragraphs from "../Text/Paragraphs";
 import CustomModal from "../CustomModal";
 import PrimaryButton from "../Buttons/PrimaryButton";
 
-export type FormData = {
+export type ContactFormData = {
     name: string;
     email: string;
     message: string;
@@ -42,7 +42,7 @@ const Contact: React.FC = () => {
     function onSubmit(data: Record<string, any>) {
         if (name.isInvalid || email.isInvalid || message.isInvalid) return;
         setIsShowModal(true);
-        sendEmail(data as FormData);
+        sendEmail(data as ContactFormData);
         reset();
     }
 

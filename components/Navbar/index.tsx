@@ -16,7 +16,7 @@ export default function App() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isActive, setIsActive] = useState("Home");
 
-    const menuItems = ["Home", "About", "Contact"];
+    const menuItems = ["Home", "About", "Projects", "Contact"];
 
     const handleMobileClick = (item: string) => {
         setIsMenuOpen(false);
@@ -64,12 +64,14 @@ export default function App() {
                 <ThemeSwitcher />
             </NavbarContent>
 
-            <NavbarMenu>
+            <NavbarMenu className='flex items-end justify-end pb-10'>
                 <ThemeSwitcher />
                 {menuItems.map((item, index) => (
-                    <NavbarMenuItem key={`${item}-${index}`}>
+                    <NavbarMenuItem className='my-1' key={`${item}-${index}`}>
                         <Link
-                            className={`w-full ${isActive === item ? "text-primary font-bold" : "text-foreground"}`}
+                            className={`w-full text-4xl flex justify-center ${
+                                isActive === item ? "text-primary font-bold" : "text-foreground"
+                            }`}
                             href={`${item === "Home" ? "#" : "#" + item.toLocaleLowerCase()}`}
                             size='lg'
                             onClick={() => handleMobileClick(item)}

@@ -61,9 +61,9 @@ export default function Hero() {
                 }}
                 className='max-w-3xl inline-block dark:text-gray-400 text-gray-700 tracking-tight sm:leading-10 sm:text-xl text-md font-light text-center mx-4 sm:mx-0 px-6'
             >
-                <strong className='text-black dark:text-white'>Hi there!</strong> I&apos;m Benji, all about frontend
-                with a peek into the backend world. I thrive on perfecting React sites and caring deeply about UX.
-                Always tinkering with new tech, especially excited about what AI can bring to the table.
+                <span className='text-2xl md:text-4xl'>👋🏽</span> I&apos;m Benji, your guy for all things web. I love
+                crafting beautiful apps and obsessed over creating top-notch user experiences. I&apos;m thrilled about
+                the possibilities AI brings to the table. Let&apos;s build something awesome together!
             </motion.p>
             <PrimaryButtonLink href='#contact'>
                 <svg

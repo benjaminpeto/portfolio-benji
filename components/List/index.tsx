@@ -101,7 +101,7 @@ export default function List() {
                 classNames='mt-4 w-2/3 md:!leading-loose mb-14'
                 text="I'm committed to crafting digital experiences that truly resonate. Taking ownership of my work, ever curious about what's on the horizon. Thriving in dynamic setups, I adapt fast, ready to bring your digital dreams to life."
             />
-            <div className='flex flex-col flex-wrap xl:flex-nowrap md:flex-row align-middle justify-center items-center md:justify-around w-full gap-12'>
+            <div className='flex flex-col flex-wrap xl:flex-nowrap md:flex-row align-middle justify-center items-center w-full gap-12'>
                 <div className='blob1'></div>
                 {listItems.map((item, index) => {
                     return (

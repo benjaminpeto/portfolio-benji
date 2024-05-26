@@ -13,7 +13,7 @@
 
 html {
     scroll-behavior: smooth;
-    user-select: none;
+    /* user-select: none; */
 }
 
 /* HERO BUTTON ANIMATION */
@@ -147,8 +147,8 @@ html {
     width: 150px;
     height: 150px;
     position: absolute;
-    right: 5%;
-    top: 15%;
+    left: 15%;
+    top: 5%;
     background: #007cf0;
     background-image: linear-gradient(45deg, rgb(0, 223, 216) 0%, rgb(0, 124, 240) 100%);
     box-shadow: 0 0 60px 20px #007cf066;
@@ -171,8 +171,8 @@ html {
     width: 150px;
     height: 150px;
     position: absolute;
-    left: 35%;
-    top: 40%;
+    right: 5%;
+    top: 45%;
     background: #ff4d4d;
     background-image: linear-gradient(45deg, rgb(249, 203, 40) 0%, rgb(255, 77, 77) 100%);
     box-shadow: 0 0 60px 20px #ff4d4d66;
@@ -223,7 +223,7 @@ html {
 /* CUSTOM GLASS EFFECT */
 
 .glassing {
-    background: rgba(255, 255, 255, 0.082);
+    background: rgba(255, 255, 255, 0.125);
     border-radius: 16px;
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(5.3px);
