@@ -3,7 +3,6 @@ import Bio from "../../../components/Bio";
 import Contact from "../../../components/Contact";
 import Hero from "../../../components/Hero";
 import List from "../../../components/List";
-import Projects from "../../../components/Projects";
 import Skills from "../../../components/Skills";
 
 export default function Home() {
@@ -12,7 +11,6 @@ export default function Home() {
             <Hero />
             <Skills />
             <Bio />
-            <Projects />
             <List />
             <Contact />
             <div id='locationdb-widget'></div>
