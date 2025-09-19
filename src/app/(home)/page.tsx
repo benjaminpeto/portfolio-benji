@@ -16,7 +16,7 @@ export default function Home() {
             <div id='locationdb-widget'></div>
             <Script
                 src='https://preview.locationdb.com/embed/loader.js'
-                data-url='https://preview.locationdb/embed'
+                data-url='https://preview.locationdb.com/embed'
                 data-theme='light'
                 data-lang='en'
                 data-library-slug='gran-canaria'
