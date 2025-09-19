@@ -8,9 +8,7 @@ const nextConfig = {
                     {
                         key: "Content-Security-Policy",
                         // keep on one line in prod; this is an example policy
-                        value:
-                            "script-src 'self' https://locationdb.com https://preview.locationdb.com; " +
-                            "frame-src https://locationdb.com https://preview.locationdb.com; ",
+                        value: "script-src 'self' https://locationdb.com https://preview.locationdb.com; " + "frame-src https://locationdb.com https://preview.locationdb.com; ",
                     },
                 ],
             },
