@@ -24,8 +24,8 @@ export default function Home() {
                 data-url='https://preview.locationdb.com/embed'
                 data-theme='light'
                 data-lang='en'
-                data-library-slug='gran-canaria' // or data-library-id="UUID"
-                crossOrigin='anonymous'
+                data-library-slug='gran-canaria'
+                crossOrigin='anonymous' // <— matches the CORS headers we now send
                 onLoad={() => console.log("[locationdb] loader loaded")}
                 onError={(e) => console.error("[locationdb] loader failed", e)}
             />
