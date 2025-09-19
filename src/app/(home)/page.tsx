@@ -1,3 +1,5 @@
+"use client";
+
 import Script from "next/script";
 import Bio from "../../../components/Bio";
 import Contact from "../../../components/Contact";
