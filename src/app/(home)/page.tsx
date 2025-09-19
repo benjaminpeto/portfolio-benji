@@ -18,7 +18,7 @@ export default function Home() {
 
             {/* LocationDB embed */}
             <div id='locationdb-widget' />
-            <Script src='https://preview.locationdb.com/embed/loader.js' strategy='afterInteractive' data-url='https://preview.locationdb.com/embed' data-theme='light' data-lang='en' data-library-slug='gran-canaria' onLoad={() => console.log("[locationdb] loader loaded")} onError={(e) => console.error("[locationdb] loader failed", e)} />
+            <Script src='https://preview.locationdb.com/embed/loader.js' strategy='afterInteractive' data-url='https://preview.locationdb.com/embed?__allowlist=refresh' data-theme='light' data-lang='en' data-library-slug='gran-canaria' onLoad={() => console.log("[locationdb] loader loaded")} onError={(e) => console.error("[locationdb] loader failed", e)} />
         </main>
     );
 }
