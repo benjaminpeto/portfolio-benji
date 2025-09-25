@@ -17,8 +17,13 @@ export default function Home() {
             <Contact />
 
             {/* LocationDB embed */}
+            <h1>PROD</h1>
             <div id='locationdb-widget' />
             <Script src='https://www.locationdb.com/embed/loader.js' strategy='afterInteractive' data-url='https://www.locationdb.com/embed' data-theme='light' data-lang='en' data-library-slug='gran-canaria' onLoad={() => console.log("[locationdb] loader loaded")} onError={(e) => console.error("[locationdb] loader failed", e)} />
+            {/* LocationDB embed */}
+            <h1>PREVIEW</h1>
+            <div id='locationdb-widget' />
+            <Script src='https://preview.locationdb.com/embed/loader.js' strategy='afterInteractive' data-url='https://preview.locationdb.com/embed' data-theme='light' data-lang='en' data-library-slug='gran-canaria' onLoad={() => console.log("[locationdb-preview] loader loaded")} onError={(e) => console.error("[locationdb-preview] loader failed", e)} />
         </main>
     );
 }
